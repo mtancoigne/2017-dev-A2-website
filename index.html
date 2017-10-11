@@ -3,20 +3,75 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Le site web</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background-color:#EEE;
+			color: #333;
+			padding:0;
+			margin:0;
+			font-family: sans-serif;
+		}
+		.content{
+			max-width:960px;
+			width:960px;
+			margin: 0 auto;
+			padding:1em;
+		}
+		.header{
+			background-color: #338;
+			text-align: center;
+			color: #EEE;
+			font-size:2em;
+		}
+		i[class^="icon-"].large{
+			font-size:4em;
+		}
+		ul.user-list{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.user-list li{
+			list-style: none;
+			display: block;
+			width:calc(25% - 1em);
+			border: 1px dashed #CCC;
+			margin: 0 1em 1em 0;
+		}
+		.user-list li:hover{
+			border-style: solid;
+			box-shadow: 0 0 2px 0px rgba(77,77,77, .5);
+		}
+		.user-list li a{
+			display: block;
+			padding: 1em;
+			text-decoration: none;
+			color: #333;
+		}
+	</style>
 </head>
 <body>
-	Site en construction...
-	<ul>
-	<li><a href="http://samson.bringwifiback.experimentslabs.com" target="_blank">samson</a></li>
-	<li><a href="http://luc.bringwifiback.experimentslabs.com" target="_blank">luc</a></li>
-	<li><a href="http://jeremy.bringwifiback.experimentslabs.com" target="_blank">jeremy</a></li>
-	<li><a href="http://alexis.bringwifiback.experimentslabs.com" target="_blank">alexis</a></li>
-	<li><a href="http://bastien.bringwifiback.experimentslabs.com" target="_blank">bastien</a></li>
-	<li><a href="http://matthieu.bringwifiback.experimentslabs.com" target="_blank">matthieu</a></li>
-	<li><a href="http://kenny.bringwifiback.experimentslabs.com" target="_blank">kenny</a></li>
-	<li><a href="http://elisa.bringwifiback.experimentslabs.com" target="_blank">elisa</a></li>
-	<li><a href="http://plouis.bringwifiback.experimentslabs.com" target="_blank">plouis</a></li>
-	<li><a href="http://christopher.bringwifiback.experimentslabs.com" target="_blank">christopher</a></li>
-	</ul>
+	<div class="header">
+		<i class="icon-wifi-blocked large"></i>
+		<br>
+		<h1>Bring the wifi back, <small><em>please</em></small></h1>
+	</div>
+	<div class="content">
+		<ul class="user-list">
+			<li><a href="http://samson.bringwifiback.experimentslabs.com" target="_blank">samson</a></li>
+			<li><a href="http://luc.bringwifiback.experimentslabs.com" target="_blank">luc</a></li>
+			<li><a href="http://jeremy.bringwifiback.experimentslabs.com" target="_blank">jeremy</a></li>
+			<li><a href="http://alexis.bringwifiback.experimentslabs.com" target="_blank">alexis</a></li>
+			<li><a href="http://bastien.bringwifiback.experimentslabs.com" target="_blank">bastien</a></li>
+			<li><a href="http://matthieu.bringwifiback.experimentslabs.com" target="_blank">matthieu</a></li>
+			<li><a href="http://kenny.bringwifiback.experimentslabs.com" target="_blank">kenny</a></li>
+			<li><a href="http://elisa.bringwifiback.experimentslabs.com" target="_blank">elisa</a></li>
+			<li><a href="http://plouis.bringwifiback.experimentslabs.com" target="_blank">plouis</a></li>
+			<li><a href="http://christopher.bringwifiback.experimentslabs.com" target="_blank">christopher</a></li>
+		</ul>
+	</div>
 </body>
 </html>
