@@ -21,6 +21,7 @@
 			margin: 0 auto;
 			padding:1em;
 		}
+		.header h1{font-weight: 100;}
 		.header{
 			background-color: #338;
 			text-align: center;
@@ -50,6 +51,18 @@
 			padding: 1em;
 			text-decoration: none;
 			color: #333;
+		}
+		@media screen and (max-width: 400px) {
+			.user-list li{ width:100%; }
+		}
+		@media screen and (min-width: 400px) and (max-width: 720px) {
+			.user-list li{ width:calc(50% - 1em); }
+		}
+		@media screen and (max-width: 960px){
+			.content{
+				max-width:100%;
+				width:100%;
+			}
 		}
 	</style>
 </head>
