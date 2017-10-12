@@ -31,7 +31,8 @@
 		i[class^="icon-"].large{
 			font-size:4em;
 		}
-		ul.user-list{
+		ul.user-list,
+		ul.project-list{
 			display: flex;
 			flex-wrap: wrap;
 			margin:0;
@@ -44,6 +45,30 @@
 			border: 1px dashed #CCC;
 			margin: 0 1em 1em 0;
 		}
+		.project-list li{
+			list-style: none;
+			display: block;
+			width:calc(33% - 1em);
+			border: 1px dashed #533;
+			margin: 0 1em 1em 0;
+			padding: 1em;
+		}
+		.project-list li h3{
+			font-size:16pt;
+			margin: -1em -1em 1em -1em;
+			padding: 1em;
+			line-height:1em;
+			border-bottom: 1px solid #CCC;
+		}
+		.project-list li h3 a{
+			text-decoration: none;
+			color: #333;
+		}
+		.project-list li p{
+			font-size:.8em;
+			margin:0;
+		}
+
 		.user-list li:hover{
 			border-style: solid;
 			box-shadow: 0 0 2px 0px rgba(77,77,77, .5);
@@ -56,9 +81,11 @@
 		}
 		@media screen and (max-width: 400px) {
 			.user-list li{ width:100%; }
+			.project-list li{ width:100%; }
 		}
 		@media screen and (min-width: 400px) and (max-width: 720px) {
 			.user-list li{ width:calc(50% - 1em); }
+			.project-list li{ width:calc(50% - 1em); }
 		}
 		@media screen and (max-width: 960px){
 			.content{
@@ -86,6 +113,16 @@
 			<li><a href="http://elisa.bringwifiback.experimentslabs.com" target="_blank">elisa</a></li>
 			<li><a href="http://plouis.bringwifiback.experimentslabs.com" target="_blank">plouis</a></li>
 			<li><a href="http://christopher.bringwifiback.experimentslabs.com" target="_blank">christopher</a></li>
+		</ul>
+		<h2>Projets</h2>
+		<ul class="project-list">
+			<li>
+				<h3><a href="/ilovemonkeys">I Love Monkeys</a></h3>
+				<p>
+					Jeu réalisé sur une journée par 5 groupes de deux pour
+					travailler en équipe et utiliser vagrant/git/ssh
+				</p>
+			</li>
 		</ul>
 	</div>
 </body>
